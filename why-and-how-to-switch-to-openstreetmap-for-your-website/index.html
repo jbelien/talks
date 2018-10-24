@@ -1,0 +1,1019 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Why (and how to) switch to OpenStreetMap for your website?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="theme-font-montserrat theme-color-sand-blue" style="width: 100%; height: 100%;">
+			<div class="reveal">
+				<div class="slides">
+					<section>
+						<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 70px; height: auto;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<h1>Why (and how to) switch to
+									<strong>OpenStreetMap</strong>
+									<br/>
+		for your website ?
+								</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 630px;">
+							<div class="sl-block-content" style="z-index: 12;" data-has-custom-html="">
+								<p>
+									<a href="https://jbelien.be" target="_blank">Jonathan Beliën</a>
+			-
+
+									<svg style="height: .8em;"
+										xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+										<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+									</svg>
+									<a href="https://github.com/jbelien/" target="_blank">jbelien</a>
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 140px; height: 140px; left: 810px; top: 560px;">
+							<div class="sl-block-content" style="z-index: 13;" data-inline-svg="false">
+								<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/Osm_belgium_logo.svg"/>
+							</div>
+						</div>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>OpenStreetMap ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 222px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<p>
+										<em>OpenStreetMap is a free, editable map of the whole world that is being built by volunteers largely from scratch and released with an open-content license.</em>
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 420px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<p>A Map ?</p>
+									<p>A Database ?</p>
+									<p>A Website ?</p>
+									<p>Tools ?</p>
+									<p>...</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 98px; height: 98px; left: 31px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 800px; height: 533px; left: 80px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 10; border-width: 1px;" href="https://openstreetmap.org/">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 18px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>A website</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 98px; height: 98px; left: 31px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 800px; height: 533px; left: 80px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm2.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 18px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>A database</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 98px; height: 98px; left: 31px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 840px; height: 560px; left: 60px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm3a.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 840px; height: 560px; left: 60px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm3b.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 840px; height: 560px; left: 60px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="1">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm3c.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 840px; height: 560px; left: 60px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="2">
+									<img style="" data-natural-width="2025" data-natural-height="1350" data-lazy-loaded="" data-src="img/osm3d.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<h1>Many maps !</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 98px; height: 98px; left: 31px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 16;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 779px; left: 160px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Many MANY maps !</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 98px; height: 98px; left: 31px; top: 21px; min-width: 4px; min-height: 4px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/stamen1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/stamen2.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/stamen3.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 779px; left: 160px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Many MANY maps !</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 98px; height: 98px; left: 31px; top: 21px; min-width: 4px; min-height: 4px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/f4map1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/f4map2.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/f4map3.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<h1>Many tools !</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 291px; height: 518px; left: 15px; top: 161px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<img style="" data-natural-width="530" data-natural-height="943" data-lazy-loaded="" data-src="img/app1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 291px; height: 518px; left: 335px; top: 161px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="530" data-natural-height="943" data-lazy-loaded="" data-src="img/app2.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 291px; height: 518px; left: 655px; top: 161px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="530" data-natural-height="943" data-lazy-loaded="" data-src="img/app3.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 98px; height: 98px; left: 31px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/OpenStreetMap_logo_2011.svg"/>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 21px;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<h1>!! Service annoucement !!</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 546px; height: 101px; left: 207px; top: 230px;">
+							<div class="sl-block-content" style="z-index: 12;">
+								<img style="" data-natural-width="800" data-natural-height="148" data-lazy-loaded="" data-src="img/Google_maps_logo.png"/>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 90px; height: 82px; left: 135px; top: 449px;">
+							<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0">
+								<img style="" data-natural-width="90" data-natural-height="82" data-lazy-loaded="" data-src="img/HERE_logo.svg.png"/>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 263px; height: 57px; left: 349px; top: 462px;">
+							<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+								<img style="" data-natural-width="263" data-natural-height="57" data-lazy-loaded="" data-src="img/bingmaps.png"/>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 190px; height: 28px; left: 690px; top: 476px;">
+							<div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0">
+								<img style="" data-natural-width="190" data-natural-height="28" data-lazy-loaded="" data-src="img/Tomtom-logo-2015.png"/>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 541px;">
+							<div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="0">
+								<p>and every other proprietary solution ...</p>
+							</div>
+						</div>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Google is in charge !</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 744px; left: 108px; top: 344px;">
+								<div class="sl-block-content" style="z-index: 13; text-align: center;">
+									<h3>(Increasing) Fees to use
+										<br/>
+		Google Maps
+										<br/>
+		on your website
+									</h3>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 690px; height: 560px; left: 136px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1923" data-natural-height="1561" data-lazy-loaded="" data-src="img/2018-07-14-switch-to-osm-1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Google is in charge !</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 370px;">
+								<div class="sl-block-content" style="z-index: 13; text-align: center;">
+									<h3>No control over what's displayed on the map</h3>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<h2>Google is in charge !</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 370px;">
+								<div class="sl-block-content" style="z-index: 12; text-align: center;">
+									<h3>Change of the terms of use
+										<br/>
+		at anytime
+									</h3>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 744px; left: 108px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Why OpenStreetMap ?</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 232px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<blockquote>
+										<p>OpenStreetMap is a free, editable map of the whole world that is being built by volunteers largely from scratch and released with an open-content license.</p>
+										<p>&nbsp;</p>
+										<p>The
+											<a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap License</a> allows free (or almost free) access to our map images and all of our underlying map data. The project aims to promote new and interesting uses of this data.
+										</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 796px; left: 82px; top: 661px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<p>
+										<em>
+											<span style="font-size:0.7em">
+												<span style="color:#808080">Source: </span>
+												<a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap" target="_blank">
+													<span style="color:#808080">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</span>
+												</a>
+											</span>
+										</em>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 744px; left: 108px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Why OpenStreetMap ?</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 395px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>You have access to the data !</h3>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 747px; height: 560px; left: 107px; top: 140px; min-width: 4px; min-height: 4px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/screenshot-ibge-1.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="width: 747px; height: 560px; left: 107px; top: 140px; min-width: 4px; min-height: 4px;">
+								<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/screenshot-ibge-2.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 108px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/2018-07-14-switch-to-osm-2.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 744px; left: 108px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Why OpenStreetMap ?</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 255px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>Power of the community</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 412px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<ul>
+										<li>Quick response</li>
+										<li>"Unlimited" manpower</li>
+										<li>
+											<strong>Local </strong>knowledge all over the World
+										</li>
+										<li>...</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 744px; left: 108px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Why OpenStreetMap ?</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 255px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>Power of the community</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 240px; left: 440px; top: 344px;">
+								<div class="sl-block-content" style="z-index: 14; text-align: left;">
+									<p>Humanitarian
+										<br/>
+		OpenStreetMap
+										<br/>
+		Team
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 358px; height: 152px; left: 301px; top: 521px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<img style="" data-natural-width="2524" data-natural-height="1072" data-lazy-loaded="" data-src="img/Missing-Maps-logo.jpg"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 152px; height: 152px; left: 280px; top: 326px;">
+								<div class="sl-block-content" style="z-index: 16;">
+									<img style="" data-natural-width="400" data-natural-height="400" data-lazy-loaded="" data-src="img/hot_400x400.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>Why switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/2018-07-14-switch-to-osm-3.png"/>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 264px;">
+								<div class="sl-block-content" style="z-index: 12;" dir="ui">
+									<h2>From
+										<br/>
+		(really) easy
+										<br/>
+		to
+										<br/>
+		(really) complicated
+									</h2>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 710px; left: 125px; top: 286px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<p>
+										<span class="ui_qtext_rendered_qtext">Don’t forget to give the OpenStreetMap credit when you use our maps (or services).</span>
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 760px; left: 100px; top: 611px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<p>See
+										<a href="https://www.openstreetmap.org/copyright" target="_blank">https://www.openstreetmap.org/copyright</a>
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 376px;">
+								<div class="sl-block-content" style="z-index: 14; text-align: center;">
+									<p>
+										<strong>© OpenStreetMap contributors</strong>
+									</p>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<h1>How to switch ?</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 838px; left: 61px; top: 136px;">
+							<div class="sl-block-content" style="z-index: 12;">
+								<h2>Geographical data</h2>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 471px;">
+							<div class="sl-block-content" style="z-index: 13;">
+								<p>
+									<a href="https://download.geofabrik.de/" target="_blank">https://download.geofabrik.de/</a>
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 300px;">
+							<div class="sl-block-content" style="z-index: 14;">
+								<h3>Geofabrik
+									<br/>
+		OpenStreetMap Data Extracts
+								</h3>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 591px;">
+							<div class="sl-block-content" style="z-index: 15;">
+								<p>
+									<strong>Every</strong> data available in OpenStreetMap database splitted by country
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>"Small" interactive map</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 640px; height: 420px; left: 160px; top: 246px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.openstreetmap.org/export/embed.html?bbox=4.346833527088166%2C50.86553253759405%2C4.351312816143037%2C50.86703746247479&amp;layer=mapnik&amp;marker=50.866285852521486%2C4.349073171615601"></iframe>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 640px; height: 480px; left: 160px; top: 220px;">
+								<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/geo6-contact.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/osmorg-share.png"/>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 621px; height: 466px; left: 170px; top: 234px;">
+								<a class="sl-block-content" style="z-index: 13;" href="http://openwhatevermap.xyz/" target="_blank">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/2018-07-14-switch-to-osm-2.png"/>
+								</a>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 325px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>JavaScript library</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 306px; height: 81px; left: 94px; top: 479px;">
+								<a class="sl-block-content" style="z-index: 14;" href="https://leafletjs.com/" target="_blank">
+									<img style="" data-natural-width="600" data-natural-height="159" data-lazy-loaded="" data-src="img/leafletlogo.png"/>
+								</a>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 81px; height: 81px; left: 560px; top: 479px;">
+								<a class="sl-block-content" style="z-index: 15;" href="https://openlayers.org/" target="_blank">
+									<img style="" data-natural-width="70" data-natural-height="70" data-lazy-loaded="" data-src="img/openlayerslogo70.png"/>
+								</a>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 177px; left: 650px; top: 500px;">
+								<div class="sl-block-content" style="z-index: 16; text-align: left;">
+									<p>
+										<a href="https://openlayers.org/" target="_blank">
+											<span style="color:#000000">OpenLayers</span>
+										</a>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 325px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>OpenStreetMap baselayer</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 390px; left: 285px; top: 451px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<p>Many (mostly free) baselayers are available !</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 610.5px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<p>See
+										<a href="https://wiki.openstreetmap.org/wiki/Tiles#Servers" target="_blank">https://wiki.openstreetmap.org/wiki/Tiles#Servers</a>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 10;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 744px; left: 108px; top: 325px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h3>OpenStreetMap Belgium baselayer</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 610.5px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<p>See
+										<a href="https://tile.openstreetmap.be/" target="_blank">https://tile.openstreetmap.be/</a>
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 140px; height: 140px; left: 410px; top: 420px;">
+								<div class="sl-block-content" style="z-index: 15;" data-inline-svg="false">
+									<img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="img/Osm_belgium_logo.svg"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/tileosmbe.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 108px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/tileosmbe-fr.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 108px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="img/tileosmbe-nl.png"/>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 734px; left: 113px; top: 325px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>Host your own custom baselayer(s)</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 451px;">
+								<div class="sl-block-content" style="z-index: 14;">
+									<p>Quite complicated but you have
+										<strong>full control</strong> on everything !
+									</p>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 744px; left: 113px; top: 611px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<p>
+										<span style="font-size:0.7em">See
+											<a href="https://switch2osm.org/manually-building-a-tile-server-18-04-lts/" target="_blank">https://switch2osm.org/manually-building-a-tile-server-18-04-lts/</a>
+										</span>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Baselayer</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 734px; left: 113px; top: 325px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<h3>Host your own custom baselayer(s)</h3>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 420px; height: 210px; left: 270px; top: 420px;">
+								<a class="sl-block-content" style="z-index: 14;" href="https://openmaptiles.org/" target="_blank">
+									<img style="" data-natural-width="1024" data-natural-height="512" data-src="img/openmaptilesbanner.png"/>
+								</a>
+							</div>
+						</section>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Geocoding</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 401px;">
+								<div class="sl-block-content" style="z-index: 13;">
+									<p>
+										<a href="https://nominatim.openstreetmap.org/" target="_blank">https://nominatim.openstreetmap.org/</a>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-src="img/nominatim.png"/>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="stack">
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 136px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<h2>Directions / Routing</h2>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 350px; height: 118px; left: 50px; top: 291px;">
+								<a class="sl-block-content" style="z-index: 13;" href="http://project-osrm.org/" target="_blank">
+									<img style="" data-natural-width="350" data-natural-height="118" data-src="img/osrm_logo.svg"/>
+								</a>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 300px; height: 51px; left: 560px; top: 325px;">
+								<a class="sl-block-content" style="z-index: 14;" href="https://www.graphhopper.com/" target="_blank">
+									<img style="" data-natural-width="300" data-natural-height="51" data-src="img/graphhopper-logo-small-300x51.png"/>
+								</a>
+							</div>
+							<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 521px;">
+								<div class="sl-block-content" style="z-index: 15;">
+									<p>
+										<a href="https://www.itinero.tech/" target="_blank">
+											<span style="font-size:2.0em">Itinero</span>
+										</a>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+								<div class="sl-block-content" style="z-index: 11;">
+									<h1>How to switch ?</h1>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content" style="z-index: 12;">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-src="img/graphhopper-foot.png"/>
+								</div>
+							</div>
+							<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 747px; height: 560px; left: 107px; top: 140px;">
+								<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0">
+									<img style="" data-natural-width="1024" data-natural-height="768" data-src="img/graphhopper-car.png"/>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<h1>How to switch ?</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="width: 329px; height: 74px; left: 316px; top: 136px; min-width: 4px; min-height: 4px;">
+							<a class="sl-block-content" style="z-index: 12;" href="https://www.mapbox.com/" target="_blank">
+								<img style="" data-natural-width="800" data-natural-height="180" data-lazy-loaded="" data-src="img/Mapbox_Logo.svg"/>
+							</a>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 280px;">
+							<div class="sl-block-content" style="z-index: 13;">
+								<ul>
+									<li>Baselayer (with custom style)</li>
+									<li>Directions</li>
+									<li>Geocoding</li>
+									<li>API</li>
+									<li>JavaScript library</li>
+									<li>Android / iOS SDK</li>
+									<li>...</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 591px;">
+							<div class="sl-block-content" style="z-index: 14;">
+								<p>Open-Source
+									<br/>
+									<span style="font-size:0.7em">(most of it)</span>
+								</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="height: auto; width: 750px; left: 105px; top: 21px;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<h1>Conclusion</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 678px; left: 141px; top: 180px;">
+							<div class="sl-block-content" style="z-index: 12;">
+								<p>
+									<strong>Everything</strong> that’s possible with Google Maps
+									<br/>
+									<strong>is possible with OpenStreetMap</strong>
+									<br/>
+		and (almost) as easy to use and to set up!
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 575px;">
+							<div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1">
+								<p>
+									<strong>So why not make the switch ?</strong>
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 358px;">
+							<div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0">
+								<p>Open-Data</p>
+								<p>+</p>
+								<p>Open-Source</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 21px; height: auto;">
+							<div class="sl-block-content" style="z-index: 12;" dir="ui">
+								<h1>Questions ?</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 328px; height: 436px; left: 316px; top: 202px;">
+							<div class="sl-block-content" style="z-index: 13;">
+								<img style="" data-natural-width="328" data-natural-height="436" data-lazy-loaded="" data-src="img/questions.gif"/>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 231px; height: auto;">
+							<div class="sl-block-content" style="z-index: 10;" dir="ui">
+								<h1>Thank you !</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 401px;">
+							<div class="sl-block-content" style="z-index: 11;">
+								<p>
+									<a href="https://jbelien.github.io/talks/" target="_blank">https://jbelien.github.io/talks/</a>
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 882px; left: 39px; top: 591px;">
+							<div class="sl-block-content" style="z-index: 12;">
+								<p>FR:
+									<a href="https://www.openstreetmap.org/user/jbelien/diary/44358" target="_blank">https://www.openstreetmap.org/user/jbelien/diary/44358</a>
+								</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 882px; left: 39px; top: 630px;">
+							<div class="sl-block-content" style="z-index: 14;">
+								<p>EN:
+									<a href="https://www.openstreetmap.org/user/jbelien/diary/44356" target="_blank">https://www.openstreetmap.org/user/jbelien/diary/44356</a>
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				],
+				width: 960,
+				height: 700,
+				transition: 'fade',
+				backgroundTransition: 'slide',
+				center: false
+			});
+		</script>
+	</body>
+</html>
