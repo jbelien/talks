@@ -1,6 +1,6 @@
-# Why (and how to) switch to OpenStreetMap for your website?
+# How to use OpenStreetMap on your website ?
 
-Presentation written for [FOSS4G Belgium 2018](https://2018.foss4g.be/)
+Presentation written for [OpenBelgium 2019](http://2019.openbelgium.be/)
 
-<https://slides.com/jbelien/why-and-how-to-switch-to-openstreetmap-for-your-website/>  
-<https://jbelien.github.io/talks/why-and-how-to-switch-to-openstreetmap-for-your-website/>  
+<https://slides.com/jbelien/how-to-use-openstreetmap-on-your-website/>  
+<https://jbelien.github.io/talks/how-to-use-openstreetmap-on-your-website/>  
