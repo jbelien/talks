@@ -6,4 +6,5 @@
 # 2019
 
 - **[OpenBelgium 2019](http://2019.openbelgium.be/session/switch-openstreetmap)** : [How to use OpenStreetMap
-on your website ?](./how-to-use-openstreetmap-on-your-website//)
+  on your website ?](./how-to-use-openstreetmap-on-your-website/)
+- **[SotM 2019](https://sotmsee.org/#1048)** : [Why and how to switch to OpenStreetMap ?](./why-and-how-to-switch-to-openstreetmap-sotmsee/)
