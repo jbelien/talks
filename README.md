@@ -8,3 +8,7 @@
 - **[OpenBelgium 2019](http://2019.openbelgium.be/session/switch-openstreetmap)** : [How to use OpenStreetMap
   on your website ?](./how-to-use-openstreetmap-on-your-website/)
 - **[SotM SEE 2019](https://sotmsee.org/#1048)** : [Why and how to switch to OpenStreetMap ?](./why-and-how-to-switch-to-openstreetmap-sotmsee/)
+
+# 2020
+
+- **[Open Summer of Code 2020](https://osoc.be/editions/2020)** : [Presention of EqualStreetNames project](https://youtu.be/U-QXynv9z4U?t=5705) (YouTube)
