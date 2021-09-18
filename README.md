@@ -12,3 +12,7 @@
 # 2020
 
 - **[Open Summer of Code 2020](https://osoc.be/editions/2020)** : [Presention of EqualStreetNames project](https://youtu.be/U-QXynv9z4U?t=5705) (YouTube)
+
+# 2021
+
+- **[Software Freedom Day 2021](https://hsbxl.be/events/software-freedom-day/2021-09-18/)** : [Why and how to switch to OpenStreetMap ?](./why-and-how-to-switch-to-openstreetmap-sfd/)
