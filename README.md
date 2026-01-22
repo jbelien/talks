@@ -16,3 +16,7 @@
 # 2021
 
 - **[Software Freedom Day 2021](https://hsbxl.be/events/software-freedom-day/2021-09-18/)** : [Why and how to switch to OpenStreetMap ?](./why-and-how-to-switch-to-openstreetmap-sfd/)
+
+# 2026
+
+- **[WOW-BE Reboot: RMI's renewed citizen-science infrastructure](./WOWBEreboot20260121.pdf)**
